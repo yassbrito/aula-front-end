@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layouts flexiveis com flexbox</title>
+    <title>Layouts flexíveis com flexbox</title>
     <style>
         section {
+            /* container flex */
             display: flex;
-            justify-content: space-around;
-
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: stretch;
+            
             width: 700px;
             height: 500px;
             margin-left: auto;
@@ -17,21 +21,37 @@
         }
 
         article {
+
+            display: flex;
+             justify-content: center; /* Alinha na horizontal */
+            align-items: center; /* Alinha na vertical */
             width: 100px;
             height: 100px;
             margin-bottom: 10px;
-            background-color: rgb(97, 170, 195);
+            background-color: rgb(124, 207, 252);
             border: 1px dashed grey;
             border-radius: 5px;
         }
+
     </style>
 </head>
 <body>
 
+    <!-- container - flex -->
     <section>
-        <article></article>
-        <article></article>
-        <article></article>
+        <!-- itens do flex -->
+        <article>Item 1</article>
+        <article>Item 2</article>
+        <article>Item 3</article>
+        <article>Item 4</article>
+        <article>Item 5</article>
+        <article>Item 6</article>
+        <article>Item 7</article>
+        <article>Item 8</article>
+        <article>Item 9</article>
+        <article>Item 10</article>
+
+           
     </section>
     
 </body>

@@ -29,14 +29,26 @@ box-sizing: border-box;
         max-width: 992px;
         margin: 0 auto;
         border: 3px solid rgb(245, 150, 140);
-
+    }
         .header-flex {
+
             display: flex;
             justify-content: space-between;
+            align-items: center;
         }
-    }
+
+        h1{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 30px;
+            font-weight: 300;
+            color: white;
+        }
+    
 
     nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         width: 400px;
         height: 100%;
         border: 3px solid white;

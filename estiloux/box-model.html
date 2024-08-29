@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #90b3d8;
+            display: flex;
+            justify-content: center;
+        }
+        article {
+            width: 180px;
+            height: 180px;
+            margin-top: 20px;
+            margin-left: 20px;
+            padding: 15px;
+            border: 2px dashed rgb(0, 0, 255);
+            border-radius: 10px;
+            background-color: rgb(136, 172, 189);
+            text-align: center;
+            box-shadow: 2px 2px 5px black;
+        }
+        article img {
+            width: 40px;
+            
+        }
+        article h1 {
+            text-align: center;
+            font-size: 18px;
+            font-family: 'Courier New', Courier, monospace;
+            text-transform: uppercase;
+        }
+        article p {
+            text-align: center;
+            font-family: cursive;
+            font-size: 14px;
+        }
+        .caixa-azul{
+            background-color: rgb(78, 78, 237);
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <img src="./imagens/flash2.svg" alt="imagem de um raio">
+
+        <h1> Web Design </h1>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </article>
+
+    <article class="caixa-azul">
+        <img src="./imagens/comparttilhar.svg" alt="imagem de compartilhar">
+
+        <h1> Graphics Design </h1>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </article>
+
+    <article>
+        <img src="./imagens/folder.svg" alt="imagem de uma pasta">
+
+        <h1> UI/UX Design </h1>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </article>
+    
+</body>
+</html>
